@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import BootstrapStyle from '../styles/vendor/bootstrap.min.css';
+import Navigation from '../pages/navigation';
 
 const Theme = ({ children }) => (
     <div>
         <style dangerouslySetInnerHTML={{ __html: BootstrapStyle }} />
+        <Navigation />
         {children}
     </div>
 );

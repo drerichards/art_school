@@ -1,5 +1,11 @@
+import Theme from '../components/Theme';
+
 const Courses = () => (
-    <span>Courses</span>
+    <Theme>    
+        <div>
+            <span>Courses</span>
+        </div>
+    </Theme>    
 );
 
 export default Courses;

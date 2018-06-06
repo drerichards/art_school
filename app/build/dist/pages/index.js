@@ -4,10 +4,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _style = require('styled-jsx/style.js');
-
-var _style2 = _interopRequireDefault(_style);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -16,9 +12,7 @@ var _Theme = require('../components/Theme');
 
 var _Theme2 = _interopRequireDefault(_Theme);
 
-var _nav = require('./nav');
-
-var _nav2 = _interopRequireDefault(_nav);
+var _reactBootstrap = require('react-bootstrap');
 
 var _index = require('../styles/index.scss');
 
@@ -29,37 +23,93 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/Users/andrerichards/Desktop/Projects/artschool/app/pages/index.js?entry';
 
 
+var dummySentences = ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Donec hendrerit tempor tellus.', 'Donec pretium posuere tellus.', 'Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'Nulla posuere.', 'Donec vitae dolor.', 'Nullam tristique diam non turpis.', 'Cras placerat accumsan nulla.', 'Nullam rutrum.', 'Nam vestibulum accumsan nisl.'];
+
 var Index = function Index() {
     return _react2.default.createElement(_Theme2.default, {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 6
+            lineNumber: 20
         }
     }, _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: _index2.default }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 7
+            lineNumber: 21
         }
-    }), _react2.default.createElement(_nav2.default, {
+    }), _react2.default.createElement(_reactBootstrap.Jumbotron, {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 8
+            lineNumber: 22
         }
-    }), _react2.default.createElement('div', {
-        className: 'jsx-3708676014' + ' ' + 'img-container',
+    }, _react2.default.createElement('h1', {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 23
         }
-    }, _react2.default.createElement('img', { alt: '', src: '/icons/github.png', className: 'jsx-3708676014',
+    }, 'Hello, world!'), _react2.default.createElement('p', {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 10
+            lineNumber: 24
         }
-    })), _react2.default.createElement(_style2.default, {
-        styleId: '3708676014',
-        css: '.btn.jsx-3708676014{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wYWdlcy9pbmRleC5qcz9lbnRyeSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFjb0IsQUFHOEIsMEVBQ1UsbUdBQ3pCIiwiZmlsZSI6ImFwcC9wYWdlcy9pbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvYW5kcmVyaWNoYXJkcy9EZXNrdG9wL1Byb2plY3RzL2FydHNjaG9vbCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBUaGVtZSBmcm9tICcuLi9jb21wb25lbnRzL1RoZW1lJztcbmltcG9ydCBOYXYgZnJvbSAnLi9uYXYnO1xuaW1wb3J0IGluZGV4U3R5bGUgZnJvbSAnLi4vc3R5bGVzL2luZGV4LnNjc3MnO1xuXG5jb25zdCBJbmRleCA9ICgpID0+IChcbiAgICA8VGhlbWU+XG4gICAgICAgIDxzdHlsZSBkYW5nZXJvdXNseVNldElubmVySFRNTD17eyBfX2h0bWw6IGluZGV4U3R5bGUgfX0gLz5cbiAgICAgICAgPE5hdiAvPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImltZy1jb250YWluZXJcIj5cbiAgICAgICAgICAgIDxpbWcgYWx0PVwiXCIgc3JjPVwiL2ljb25zL2dpdGh1Yi5wbmdcIiAvPlxuICAgICAgICA8L2Rpdj5cblxuXG4gICAgICAgIHsvKiBTdHlsaW5nIHVzaW5nIHN0eWxlZC1qc3guICovfVxuICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgIC5idG4ge1xuICAgICAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgICAgICAgIH1gXG4gICAgICAgIH1cbiAgICAgICAgPC9zdHlsZT5cbiAgICA8L1RoZW1lPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7XG4iXX0= */\n/*@ sourceURL=app/pages/index.js?entry */'
-    }));
+    }, 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.'), _react2.default.createElement('p', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28
+        }
+    }, _react2.default.createElement(_reactBootstrap.Button, { bsStyle: 'primary', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+        }
+    }, 'Learn more'))), _react2.default.createElement('div', { className: 'container', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32
+        }
+    }, _react2.default.createElement(_reactBootstrap.Grid, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33
+        }
+    }, _react2.default.createElement(_reactBootstrap.Row, { className: 'show-grid', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34
+        }
+    }, _react2.default.createElement(_reactBootstrap.Col, { sm: 6, md: 3, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35
+        }
+    }, _react2.default.createElement('br', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36
+        }
+    }), dummySentences.slice(0, 3).join(' ')), _react2.default.createElement(_reactBootstrap.Col, { sm: 6, md: 3, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39
+        }
+    }, _react2.default.createElement('br', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+        }
+    }), dummySentences.slice(0, 3).join(' ')), _react2.default.createElement(_reactBootstrap.Col, { sm: 6, md: 3, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43
+        }
+    }, _react2.default.createElement('br', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44
+        }
+    }), dummySentences.slice(0, 3).join(' ')), _react2.default.createElement(_reactBootstrap.Col, { sm: 6, md: 3, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+        }
+    }, _react2.default.createElement('br', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48
+        }
+    }), dummySentences.slice(0, 3).join(' '))))));
 };
 
 exports.default = Index;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wYWdlcy9pbmRleC5qcyJdLCJuYW1lcyI6WyJUaGVtZSIsIk5hdiIsImluZGV4U3R5bGUiLCJJbmRleCIsIl9faHRtbCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQVc7Ozs7QUFDbEIsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBZ0I7Ozs7Ozs7OztBQUV2QixJQUFNLFFBQVEsU0FBUixBQUFRLFFBQUE7MkJBQ1YsQUFBQzs7c0JBQUQ7d0JBQUEsQUFDSTtBQURKO0FBQUEsS0FBQSwyQ0FDVyx5QkFBeUIsRUFBaEMsQUFBZ0MsQUFBRSxBQUFRO3NCQUExQzt3QkFESixBQUNJLEFBQ0E7QUFEQTt3QkFDQSxBQUFDOztzQkFBRDt3QkFGSixBQUVJLEFBQ0E7QUFEQTtBQUFBLHdCQUNBLGNBQUE7NENBQUEsQUFBZTs7c0JBQWY7d0JBQUEsQUFDSTtBQURKO0FBQUEsOENBQ1MsS0FBTCxBQUFTLElBQUcsS0FBWixBQUFnQixnQ0FBaEI7O3NCQUFBO3dCQUpSLEFBR0ksQUFDSTtBQUFBOztpQkFKUjthQURVLEFBQ1Y7QUFBQTtBQURKLEFBb0JBOztrQkFBQSxBQUFlIiwiZmlsZSI6ImluZGV4LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9hbmRyZXJpY2hhcmRzL0Rlc2t0b3AvUHJvamVjdHMvYXJ0c2Nob29sIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wYWdlcy9pbmRleC5qcyJdLCJuYW1lcyI6WyJUaGVtZSIsIkJ1dHRvbiIsIkp1bWJvdHJvbiIsIkdyaWQiLCJSb3ciLCJDb2wiLCJpbmRleFN0eWxlIiwiZHVtbXlTZW50ZW5jZXMiLCJJbmRleCIsIl9faHRtbCIsInNsaWNlIiwiam9pbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBVzs7OztBQUNsQixBQUFTLEFBQVEsQUFBVyxBQUFNLEFBQUs7O0FBQ3ZDLEFBQU8sQUFBZ0I7Ozs7Ozs7OztBQUV2QixJQUFNLGlCQUFpQixDQUFBLEFBQ25CLDZEQURtQixBQUVuQixrQ0FGbUIsQUFHbkIsaUNBSG1CLEFBSW5CLHFFQUptQixBQUtuQix5RkFMbUIsQUFNbkIsa0JBTm1CLEFBT25CLHNCQVBtQixBQVFuQixxQ0FSbUIsQUFTbkIsaUNBVG1CLEFBVW5CLGtCQVZKLEFBQXVCLEFBV25COztBQUdKLElBQU0sUUFBUSxTQUFSLEFBQVEsUUFBQTsyQkFDVixBQUFDOztzQkFBRDt3QkFBQSxBQUNJO0FBREo7QUFBQSxLQUFBLDJDQUNXLHlCQUF5QixFQUFoQyxBQUFnQyxBQUFFLEFBQVE7c0JBQTFDO3dCQURKLEFBQ0ksQUFDQTtBQURBO3dCQUNBLEFBQUM7O3NCQUFEO3dCQUFBLEFBQ0k7QUFESjtBQUFBLHVCQUNJLGNBQUE7O3NCQUFBO3dCQUFBO0FBQUE7QUFBQSxPQURKLEFBQ0ksQUFDQSxrQ0FBQSxjQUFBOztzQkFBQTt3QkFBQTtBQUFBO0FBQUEsT0FGSixBQUVJLEFBSUEsbUpBQUEsY0FBQTs7c0JBQUE7d0JBQUEsQUFDSTtBQURKO0FBQUEsdUJBQ0ksQUFBQyx3Q0FBTyxTQUFSLEFBQWdCO3NCQUFoQjt3QkFBQTtBQUFBO09BVFosQUFFSSxBQU1JLEFBQ0ksQUFHUixpQ0FBQSxjQUFBLFNBQUssV0FBTCxBQUFlO3NCQUFmO3dCQUFBLEFBQ0k7QUFESjt1QkFDSSxBQUFDOztzQkFBRDt3QkFBQSxBQUNJO0FBREo7QUFBQSx1QkFDSSxBQUFDLHFDQUFJLFdBQUwsQUFBZTtzQkFBZjt3QkFBQSxBQUNJO0FBREo7dUJBQ0ksQUFBQyxxQ0FBSSxJQUFMLEFBQVMsR0FBRyxJQUFaLEFBQWdCO3NCQUFoQjt3QkFBQSxBQUNJO0FBREo7OztzQkFDSTt3QkFESixBQUNJLEFBQ0M7QUFERDtBQUFBLHVCQUNDLEFBQWUsTUFBZixBQUFxQixHQUFyQixBQUF3QixHQUF4QixBQUEyQixLQUhwQyxBQUNJLEFBRUssQUFBZ0MsQUFFckMsdUJBQUEsQUFBQyxxQ0FBSSxJQUFMLEFBQVMsR0FBRyxJQUFaLEFBQWdCO3NCQUFoQjt3QkFBQSxBQUNJO0FBREo7OztzQkFDSTt3QkFESixBQUNJLEFBQ0M7QUFERDtBQUFBLHVCQUNDLEFBQWUsTUFBZixBQUFxQixHQUFyQixBQUF3QixHQUF4QixBQUEyQixLQVBwQyxBQUtJLEFBRUssQUFBZ0MsQUFFckMsdUJBQUEsQUFBQyxxQ0FBSSxJQUFMLEFBQVMsR0FBRyxJQUFaLEFBQWdCO3NCQUFoQjt3QkFBQSxBQUNJO0FBREo7OztzQkFDSTt3QkFESixBQUNJLEFBQ0M7QUFERDtBQUFBLHVCQUNDLEFBQWUsTUFBZixBQUFxQixHQUFyQixBQUF3QixHQUF4QixBQUEyQixLQVhwQyxBQVNJLEFBRUssQUFBZ0MsQUFFckMsdUJBQUEsQUFBQyxxQ0FBSSxJQUFMLEFBQVMsR0FBRyxJQUFaLEFBQWdCO3NCQUFoQjt3QkFBQSxBQUNJO0FBREo7OztzQkFDSTt3QkFESixBQUNJLEFBQ0M7QUFERDtBQUFBLHVCQUNDLEFBQWUsTUFBZixBQUFxQixHQUFyQixBQUF3QixHQUF4QixBQUEyQixLQTlCdEMsQUFDVixBQVlJLEFBQ0ksQUFDSSxBQWFJLEFBRUssQUFBZ0M7QUE5QnpELEFBc0NBOztrQkFBQSxBQUFlIiwiZmlsZSI6ImluZGV4LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9hbmRyZXJpY2hhcmRzL0Rlc2t0b3AvUHJvamVjdHMvYXJ0c2Nob29sIn0=

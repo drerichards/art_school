@@ -1,5 +1,11 @@
+import Theme from '../components/Theme';
+
 const About = () => (
-    <span>About</span>
+    <Theme>
+        <div>
+            <span>About</span>
+        </div>
+    </Theme>
 );
 
 export default About;
