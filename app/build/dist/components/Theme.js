@@ -16,7 +16,7 @@ var _bootstrapMin = require('../styles/vendor/bootstrap.min.css');
 
 var _bootstrapMin2 = _interopRequireDefault(_bootstrapMin);
 
-var _navigation = require('../pages/navigation');
+var _navigation = require('./navigation');
 
 var _navigation2 = _interopRequireDefault(_navigation);
 

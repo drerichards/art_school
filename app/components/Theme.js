@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import BootstrapStyle from '../styles/vendor/bootstrap.min.css';
-import Navigation from '../pages/navigation';
+import Navigation from './navigation';
 
 const Theme = ({ children }) => (
     <div>

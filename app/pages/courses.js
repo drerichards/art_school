@@ -17,6 +17,7 @@ const Courses = () => (
             </p>
         </Jumbotron>
 
+        {/* Course section */}
         <div className="container">
             <h3>OUR SCHOOL</h3>
             <section>
