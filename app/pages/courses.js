@@ -1,5 +1,5 @@
 import Theme from '../components/Theme';
-import { Button, Jumbotron} from 'react-bootstrap';
+import { Button, Jumbotron } from 'react-bootstrap';
 import indexStyle from '../styles/index.scss';
 
 const Courses = () => (
@@ -33,7 +33,8 @@ const Courses = () => (
                         </div>
                         <div>
                             <span className="bold">Total Duration: </span>
-                            <span>14/03 - 05/04</span></div>
+                            <span>14/03 - 05/04</span>
+                        </div>
                         <div>Enroll >></div>
                     </div>
                 </aside>
@@ -57,4 +58,4 @@ const Courses = () => (
     </Theme>
 );
 
-export default Courses
+export default Courses;

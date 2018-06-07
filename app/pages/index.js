@@ -1,6 +1,5 @@
-import Theme from '../components/Theme';
 import { Button, Jumbotron, Grid, Row, Col } from 'react-bootstrap';
-import indexStyle from '../styles/index.scss';
+import Theme from '../components/Theme';
 
 const dummySentences = [
     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
@@ -13,11 +12,10 @@ const dummySentences = [
     'Nullam tristique diam non turpis.',
     'Cras placerat accumsan nulla.',
     'Nullam rutrum.',
-    'Nam vestibulum accumsan nisl.']
+    'Nam vestibulum accumsan nisl.'];
 
 const Index = () => (
     <Theme>
-        <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
         {/* Top Jumbotron */}
         <Jumbotron>
             <h1>Hello, world!</h1>

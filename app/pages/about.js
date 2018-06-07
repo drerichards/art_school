@@ -1,5 +1,5 @@
+import { Button, Jumbotron } from 'react-bootstrap';
 import Theme from '../components/Theme';
-import { Button, Jumbotron} from 'react-bootstrap';
 import indexStyle from '../styles/index.scss';
 
 const About = () => (

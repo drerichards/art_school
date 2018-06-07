@@ -1,15 +1,14 @@
+import { Button, Jumbotron, FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
 import Theme from '../components/Theme';
-import { Button, Jumbotron, FormGroup, FormControl } from 'react-bootstrap';
 import indexStyle from '../styles/index.scss';
 
-const FieldGroup = ({ id, help, ...props }) => {
-    return (
-      <FormGroup controlId={id}>
+const FieldGroup = ({ id, help, ...props }) => (
+    <FormGroup controlId={id}>
         <FormControl {...props} />
         {help && <HelpBlock>{help}</HelpBlock>}
-      </FormGroup>
-    );
-  }
+    </FormGroup>
+);
+
 
 const Contact = () => (
     <Theme>

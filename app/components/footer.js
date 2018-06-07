@@ -1,4 +1,3 @@
-import Theme from '../components/Theme';
 import { } from 'react-bootstrap';
 import indexStyle from '../styles/index.scss';
 
@@ -10,4 +9,4 @@ const FooterBar = () => (
     </div>
 );
 
-export default FooterBar
+export default FooterBar;
