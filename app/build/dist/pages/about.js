@@ -71,18 +71,28 @@ var About = function About() {
             fileName: _jsxFileName,
             lineNumber: 21
         }
-    }, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'), _react2.default.createElement('p', {
+    }, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'), _react2.default.createElement('br', {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 26
         }
+    }), _react2.default.createElement('p', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+        }
     }, 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'), _react2.default.createElement('br', {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 34
         }
-    })));
+    }), _react2.default.createElement('p', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35
+        }
+    }, 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.')));
 };
 
 exports.default = About;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wYWdlcy9hYm91dC5qcyJdLCJuYW1lcyI6WyJUaGVtZSIsIkJ1dHRvbiIsIkp1bWJvdHJvbiIsImluZGV4U3R5bGUiLCJBYm91dCIsIl9faHRtbCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBVzs7OztBQUNsQixBQUFTLEFBQVE7O0FBQ2pCLEFBQU8sQUFBZ0I7Ozs7Ozs7OztBQUV2QixJQUFNLFFBQVEsU0FBUixBQUFRLFFBQUE7MkJBQ1YsQUFBQzs7c0JBQUQ7d0JBQUEsQUFDSTtBQURKO0FBQUEsS0FBQSwyQ0FDVyx5QkFBeUIsRUFBaEMsQUFBZ0MsQUFBRSxBQUFRO3NCQUExQzt3QkFESixBQUNJLEFBRUE7QUFGQTt3QkFFQSxBQUFDOztzQkFBRDt3QkFBQSxBQUNJO0FBREo7QUFBQSx1QkFDSSxjQUFBOztzQkFBQTt3QkFBQTtBQUFBO0FBQUEsT0FESixBQUNJLEFBQ0Esa0NBQUEsY0FBQTs7c0JBQUE7d0JBQUE7QUFBQTtBQUFBLE9BRkosQUFFSSxBQUlBLG1KQUFBLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtBQUFBLHVCQUNJLEFBQUMsd0NBQU8sU0FBUixBQUFnQjtzQkFBaEI7d0JBQUE7QUFBQTtPQVZaLEFBR0ksQUFNSSxBQUNJLEFBR1IsaUNBQUEsY0FBQSxTQUFLLFdBQUwsQUFBZTtzQkFBZjt3QkFBQSxBQUNJO0FBREo7dUJBQ0ksY0FBQTs7c0JBQUE7d0JBQUE7QUFBQTtBQUFBLE9BREosQUFDSSxBQUNBLCtCQUFBLGNBQUE7O3NCQUFBO3dCQUFBO0FBQUE7QUFBQSxPQUZKLEFBRUksQUFLQSwyUUFBQSxjQUFBOztzQkFBQTt3QkFBQTtBQUFBO0FBQUEsT0FQSixBQU9JLEFBT0E7O3NCQUFBO3dCQTVCRSxBQUNWLEFBYUksQUFjSTtBQUFBO0FBQUE7QUE1QlosQUFpQ0E7O2tCQUFBLEFBQWUiLCJmaWxlIjoiYWJvdXQuanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL2FuZHJlcmljaGFyZHMvRGVza3RvcC9Qcm9qZWN0cy9hcnRzY2hvb2wifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9wYWdlcy9hYm91dC5qcyJdLCJuYW1lcyI6WyJUaGVtZSIsIkJ1dHRvbiIsIkp1bWJvdHJvbiIsImluZGV4U3R5bGUiLCJBYm91dCIsIl9faHRtbCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBVzs7OztBQUNsQixBQUFTLEFBQVE7O0FBQ2pCLEFBQU8sQUFBZ0I7Ozs7Ozs7OztBQUV2QixJQUFNLFFBQVEsU0FBUixBQUFRLFFBQUE7MkJBQ1YsQUFBQzs7c0JBQUQ7d0JBQUEsQUFDSTtBQURKO0FBQUEsS0FBQSwyQ0FDVyx5QkFBeUIsRUFBaEMsQUFBZ0MsQUFBRSxBQUFRO3NCQUExQzt3QkFESixBQUNJLEFBRUE7QUFGQTt3QkFFQSxBQUFDOztzQkFBRDt3QkFBQSxBQUNJO0FBREo7QUFBQSx1QkFDSSxjQUFBOztzQkFBQTt3QkFBQTtBQUFBO0FBQUEsT0FESixBQUNJLEFBQ0Esa0NBQUEsY0FBQTs7c0JBQUE7d0JBQUE7QUFBQTtBQUFBLE9BRkosQUFFSSxBQUlBLG1KQUFBLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtBQUFBLHVCQUNJLEFBQUMsd0NBQU8sU0FBUixBQUFnQjtzQkFBaEI7d0JBQUE7QUFBQTtPQVZaLEFBR0ksQUFNSSxBQUNJLEFBR1IsaUNBQUEsY0FBQSxTQUFLLFdBQUwsQUFBZTtzQkFBZjt3QkFBQSxBQUNJO0FBREo7dUJBQ0ksY0FBQTs7c0JBQUE7d0JBQUE7QUFBQTtBQUFBLE9BREosQUFDSSxBQUNBLCtCQUFBLGNBQUE7O3NCQUFBO3dCQUFBO0FBQUE7QUFBQSxPQUZKLEFBRUksQUFLQTs7c0JBQUE7d0JBUEosQUFPSSxBQUNBO0FBREE7QUFBQSx3QkFDQSxjQUFBOztzQkFBQTt3QkFBQTtBQUFBO0FBQUEsT0FSSixBQVFJLEFBT0E7O3NCQUFBO3dCQWZKLEFBZUksQUFDQTtBQURBO0FBQUEsd0JBQ0EsY0FBQTs7c0JBQUE7d0JBQUE7QUFBQTtBQUFBLE9BOUJFLEFBQ1YsQUFhSSxBQWdCSTtBQTlCWixBQTBDQTs7a0JBQUEsQUFBZSIsImZpbGUiOiJhYm91dC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvYW5kcmVyaWNoYXJkcy9EZXNrdG9wL1Byb2plY3RzL2FydHNjaG9vbCJ9
