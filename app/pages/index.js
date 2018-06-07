@@ -135,7 +135,6 @@ const Index = () => (
                 <Button bsStyle="primary">Learn more</Button>
             </p>
         </Jumbotron>
-        <footer>Lorem</footer>
     </Theme>
 );
 
