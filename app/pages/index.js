@@ -12,6 +12,42 @@ const dummyWords = [
     ['I', 'Illustration']
 ];
 
+const filenames = [
+    ['head', 'paint', 'poster'],
+    ['leaf', 'deer', 'ladies'],
+    ['flower', 'melon', 'table'],
+    ['ace', 'clip', 'horn']
+];
+
+const imageGenerator = index => {
+    const columnImages = [];
+    filenames[index].map(name => {
+        const imgTag = (
+            <div
+                key={name}
+                alt={name}
+                style={{ backgroundImage: `url("https://res.cloudinary.com/andrerichards/image/upload/v1528382161/artschool/${name}.png")` }}
+            />
+        );
+        columnImages.push(imgTag);
+    });
+    return columnImages;
+};
+
+const columnGenerator = () => {
+    const columns = [];
+    for (let i = 0; i < 4; i++) {
+        columns.push(
+            <Col sm={6} md={3}>
+                <br />
+                <div className="img-column">
+                    {imageGenerator(i)}
+                </div>
+            </Col>);
+    }
+    return columns;
+};
+
 const Index = () => (
     <Theme>
         <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
@@ -51,45 +87,10 @@ const Index = () => (
         </div>
 
         {/* Image gallery */}
-        <div className="container">
+        <div className="container home-image-container">
             <Grid>
                 <Row className="show-grid">
-                    <Col sm={6} md={3}>
-                        <br />
-                        <div className="img-container">
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                        </div>
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                        <div className="img-container">
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                        </div>
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                        <div className="img-container">
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                        </div>
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                        <div className="img-container">
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                            <img alt="" src="/icons/github.png" />
-                        </div>
-                    </Col>
+                    {columnGenerator()}
                 </Row>
             </Grid>
         </div>
