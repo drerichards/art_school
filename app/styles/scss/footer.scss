@@ -1,0 +1,10 @@
+@import "partials/mixins";
+.footer{
+    @include center-flex;
+    background-color: #292929;
+    justify-content: space-around;
+    padding: 1.5em;
+    span{
+        color: #969595;
+    }
+}

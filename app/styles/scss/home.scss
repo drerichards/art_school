@@ -1,0 +1,50 @@
+@import "partials/mixins";
+@import "partials/vars";
+.home-jumbo {
+    @include jumbotron-settings(90vh, "https://res.cloudinary.com/andrerichards/image/upload/v1528371884/artschool/cover-2.jpg");
+    main {
+        @include center-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: 25vw;
+        height: 50vh;
+        min-width: 200px;
+        background-color: #fff;
+        text-align: left;
+        padding: 5.5%;
+        h1 {
+            margin: 0;
+            font-weight: 900;
+            font-size: 6em;
+        }
+        button {
+            border: none;
+            margin: 0 auto;
+        }
+        button:hover,
+        button:focus,
+        button:active:hover {
+            background-color: #fff;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.home-course-container {
+    .home-course-columns {
+        h1 {
+            font-size: 5em;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+        h5{
+            margin-bottom: 2em;
+        }
+        a{
+            color: $orange-color;
+            font-weight: 400;
+        }
+    }
+}

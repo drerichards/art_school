@@ -1,54 +1,51 @@
-import { Button, Jumbotron, Grid, Row, Col } from 'react-bootstrap';
+import { Button, Jumbotron, Grid, Row, Col, Glyphicon } from 'react-bootstrap';
 import Theme from '../components/Theme';
+import indexStyle from '../styles/index.scss';
+import homeStyle from '../styles/scss/home.scss';
 
-const dummySentences = [
-    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    'Donec hendrerit tempor tellus.',
-    'Donec pretium posuere tellus.',
-    'Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.',
-    'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-    'Nulla posuere.',
-    'Donec vitae dolor.',
-    'Nullam tristique diam non turpis.',
-    'Cras placerat accumsan nulla.',
-    'Nullam rutrum.',
-    'Nam vestibulum accumsan nisl.'];
+const dummyText = "I'm a paragraph. Click here to add your own text and edit me.";
+const dummyLink = 'Read More >>';
+const dummyWords = [
+    ['F', 'Fine Art'],
+    ['G', 'Graphic Design'],
+    ['G', 'Graffiti'],
+    ['I', 'Illustration']
+];
 
 const Index = () => (
     <Theme>
+        <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
+        <style dangerouslySetInnerHTML={{ __html: homeStyle }} />
         {/* Top Jumbotron */}
-        <Jumbotron>
-            <h1>Hello, world!</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            <p>
-                <Button bsStyle="primary">Learn more</Button>
-            </p>
+        <Jumbotron className="home-jumbo">
+            <main>
+                <h1>CRE</h1>
+                <h1>ATIV</h1>
+                <h1>ITY.</h1>
+                <Button className="chevron" bsSize="large">
+                    <Glyphicon glyph="chevron-down" />
+                </Button>
+            </main>
         </Jumbotron>
 
         {/* Courses section */}
-        <div className="container">
+        <div className="container home-course-container">
             <h3>OUR COURSES</h3>
+            <p className="btm-border" />
             <Grid>
                 <Row className="show-grid">
-                    <Col sm={6} md={3}>
-                        <br />
-                        {dummySentences.slice(0, 3).join(' ')}
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                        {dummySentences.slice(0, 3).join(' ')}
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                        {dummySentences.slice(0, 3).join(' ')}
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                        {dummySentences.slice(0, 3).join(' ')}
-                    </Col>
+                    { dummyWords.map(word => { 
+                        return (
+                            <Col className="home-course-columns" sm={6} md={3}>
+                                <br />
+                                <h1>{word[0]}</h1>
+                                <h5>{word[1]}</h5>
+                                <p>{dummyText}</p>
+                                <br />
+                                <a href="#">{dummyLink}</a>
+                            </Col>
+                        );
+                    })}
                 </Row>
             </Grid>
         </div>
@@ -104,19 +101,15 @@ const Index = () => (
                 <Row className="show-grid">
                     <Col sm={6} md={3}>
                         <br />
-                        {dummySentences.slice(0, 3).join(' ')}
                     </Col>
                     <Col sm={6} md={3}>
                         <br />
-                        {dummySentences.slice(0, 3).join(' ')}
                     </Col>
                     <Col sm={6} md={3}>
                         <br />
-                        {dummySentences.slice(0, 3).join(' ')}
                     </Col>
                     <Col sm={6} md={3}>
                         <br />
-                        {dummySentences.slice(0, 3).join(' ')}
                     </Col>
                 </Row>
             </Grid>

@@ -1,0 +1,32 @@
+@import "partials/mixins";
+@import "partials/vars";
+.navigation {
+    background-color: #fff;
+    border: none;
+    margin-bottom: 0;
+    .container {
+        @include center-flex;
+        justify-content: space-between;
+        .navbar-brand {
+            color: $primary-color !important;
+        }
+    }
+    li>a {
+        color: $primary-color !important;
+        padding: 0.5em 1em;
+        p {
+            margin: 0;
+        }
+    }
+    li>a:hover,
+    li>a:active {
+        color: $orange-color !important;
+        text-decoration: none;
+    }
+    .navbar-toggle {
+        border-color: transparent;
+    }
+    .icon-bar {
+        background-color: $primary-color;
+    }
+}

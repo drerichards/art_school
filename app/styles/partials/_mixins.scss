@@ -1,0 +1,17 @@
+@mixin center-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin jumbotron-settings($height, $image){
+    background-size: cover;
+    background-image: url($image);    
+    background-position: center;
+    background-repeat: no-repeat;
+    height: $height;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
