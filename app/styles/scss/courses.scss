@@ -1,0 +1,36 @@
+@import "../partials/mixins";
+@import "../partials/vars";
+.fineart-jumbo {
+    @include jumbotron-settings(60vh, $img-prefix+"c_scale,w_1800/v1528422446/artschool/cover-4.jpg");
+}
+
+.graph-jumbo {
+    @include jumbotron-settings(60vh, $img-prefix+"c_scale,w_1800/v1528425142/artschool/cover-6.jpg");
+}
+
+.graffiti-jumbo {
+    @include jumbotron-settings(60vh, $img-prefix+"c_scale,w_1800/v1528425142/artschool/cover-5.jpg");
+}
+
+.illus-jumbo {
+    @include jumbotron-settings(60vh, $img-prefix+"c_scale,w_1800/v1528425142/artschool/cover-7.png");
+}
+
+.courses-container {
+    section {
+        @include center-flex;
+        display: flex;
+        margin: 3em 6em 6em;
+        aside,
+        main {
+            flex: 2;
+        }
+        aside {
+            @include course-container-settings;
+            padding: 2em;
+        }
+        main {
+            text-align: left;
+        }
+    }
+}

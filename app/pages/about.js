@@ -9,7 +9,7 @@ const About = () => (
         <style dangerouslySetInnerHTML={{ __html: aboutStyle }} />
         {/* Hero */}
         <Jumbotron className="about-jumbo" />
-        <div className="container">
+        <div className="container about-container">
             <h3>OUR SCHOOL</h3>
             <p className="btm-border" />
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 

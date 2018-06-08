@@ -1,41 +1,36 @@
 import Theme from '../components/Theme';
-import { Button, Jumbotron } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 import indexStyle from '../styles/index.scss';
+import coursesStyle from '../styles/scss/courses.scss';
 
-const Courses = () => (
+const GraphicArt = () => (
     <Theme>
         <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
+        <style dangerouslySetInnerHTML={{ __html: coursesStyle }} />
         {/* Hero */}
-        <Jumbotron>
-            <h1>Hello, world!</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            <p>
-                <Button bsStyle="primary">Learn more</Button>
-            </p>
-        </Jumbotron>
+        <Jumbotron className="graph-jumbo" />
 
         {/* Course section */}
-        <div className="container">
-            <h3>OUR SCHOOL</h3>
+        <div className="container courses-container">
+            <h3>Graphic Art</h3>
+            <p className="btm-border" />
             <section>
                 <aside>
                     <div className="date">
-                        <div>14</div>
-                        <div>March</div>
+                        <h1>14</h1>
+                        <h5>March</h5>
                     </div>
                     <div className="course-dates">
                         <div>
                             <span className="bold">Dates: </span>
-                            <span>14/03 - 05/04</span>
+                            <span>15/04 - 19/09</span>
                         </div>
                         <div>
                             <span className="bold">Total Duration: </span>
-                            <span>14/03 - 05/04</span>
+                            <span>48h</span>
+                            <div>Wednesdays, from 08.00pm - 10:00pm</div>
                         </div>
-                        <div>Enroll >></div>
+                        <a href="#">Enroll >></a>
                     </div>
                 </aside>
                 <main>
@@ -58,4 +53,4 @@ const Courses = () => (
     </Theme>
 );
 
-export default Courses;
+export default GraphicArt;

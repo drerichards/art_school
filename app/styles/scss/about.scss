@@ -2,4 +2,5 @@
 @import "../partials/vars";
 .about-jumbo {
     @include jumbotron-settings(60vh, $img-prefix+"v1528422465/artschool/cover-1.jpg");
+    padding: 2.5em 12em 6em;
 }

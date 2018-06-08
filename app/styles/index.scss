@@ -2,7 +2,7 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import "partials/vars";
 body {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: lighter;
 }
 
@@ -12,12 +12,13 @@ body {
 }
 
 .container {
-  padding: 1.5em;
+  padding: 1em;
   text-align: center;
   h3 {
     font-size: 1.2em;
     letter-spacing: 5px;
     font-weight: bold;
+    text-transform: uppercase;
   }
   .btm-border{
     border-bottom: 3px solid $orange-color;

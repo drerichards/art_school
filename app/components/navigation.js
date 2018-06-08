@@ -34,22 +34,22 @@ const Navigation = () => (
                         <span>
                             <NavDropdown eventKey={3} title="Courses" id="basic-nav-dropdown">
                                 <MenuItem eventKey={3.1}>
-                                    <Link href="/courses">
+                                    <Link href="/fine-art">
                                         <p>Fine Art</p>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem eventKey={3.2}>
-                                    <Link href="/courses">
+                                    <Link href="/graphic-design">
                                         <p>Graphic Design</p>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem eventKey={3.3}>
-                                    <Link href="/courses">
+                                    <Link href="/graffiti">
                                         <p>Graffiti</p>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem eventKey={3.4}>
-                                    <Link href="/courses">
+                                    <Link href="/illustration">
                                         <p>Illustration</p>
                                     </Link>
                                 </MenuItem>

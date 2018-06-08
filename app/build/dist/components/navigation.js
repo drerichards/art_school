@@ -118,7 +118,7 @@ var Navigation = function Navigation() {
             fileName: _jsxFileName,
             lineNumber: 36
         }
-    }, _react2.default.createElement(_link2.default, { href: '/courses', __source: {
+    }, _react2.default.createElement(_link2.default, { href: '/fine-art', __source: {
             fileName: _jsxFileName,
             lineNumber: 37
         }
@@ -131,7 +131,7 @@ var Navigation = function Navigation() {
             fileName: _jsxFileName,
             lineNumber: 41
         }
-    }, _react2.default.createElement(_link2.default, { href: '/courses', __source: {
+    }, _react2.default.createElement(_link2.default, { href: '/graphic-design', __source: {
             fileName: _jsxFileName,
             lineNumber: 42
         }
@@ -144,7 +144,7 @@ var Navigation = function Navigation() {
             fileName: _jsxFileName,
             lineNumber: 46
         }
-    }, _react2.default.createElement(_link2.default, { href: '/courses', __source: {
+    }, _react2.default.createElement(_link2.default, { href: '/graffiti', __source: {
             fileName: _jsxFileName,
             lineNumber: 47
         }
@@ -157,7 +157,7 @@ var Navigation = function Navigation() {
             fileName: _jsxFileName,
             lineNumber: 51
         }
-    }, _react2.default.createElement(_link2.default, { href: '/courses', __source: {
+    }, _react2.default.createElement(_link2.default, { href: '/illustration', __source: {
             fileName: _jsxFileName,
             lineNumber: 52
         }
