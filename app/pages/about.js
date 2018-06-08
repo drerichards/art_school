@@ -1,23 +1,17 @@
 import { Button, Jumbotron } from 'react-bootstrap';
 import Theme from '../components/Theme';
 import indexStyle from '../styles/index.scss';
+import aboutStyle from '../styles/scss/about.scss';
 
 const About = () => (
     <Theme>
         <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
+        <style dangerouslySetInnerHTML={{ __html: aboutStyle }} />
         {/* Hero */}
-        <Jumbotron>
-            <h1>Hello, world!</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            <p>
-                <Button bsStyle="primary">Learn more</Button>
-            </p>
-        </Jumbotron>
+        <Jumbotron className="about-jumbo" />
         <div className="container">
             <h3>OUR SCHOOL</h3>
+            <p className="btm-border" />
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type 

@@ -1,0 +1,7 @@
+;
+
+(function () {
+  "use strict";
+
+  module.exports = ".about-jumbo {\n  background-size: cover;\n  background-image: url(\"https://res.cloudinary.com/andrerichards/image/upload/v1528422465/artschool/cover-1.jpg\");\n  background-position: center;\n  background-repeat: no-repeat;\n  height: 60vh;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background-attachment: fixed; }\n";
+})();
