@@ -22,11 +22,11 @@ const Illustration = () => (
                     </div>
                     <div className="course-dates">
                         <div>
-                            <span className="bold">Dates: </span>
+                            <span className="bold-only">Dates: </span>
                             <span>15/04 - 19/09</span>
                         </div>
                         <div>
-                            <span className="bold">Total Duration: </span>
+                            <span className="bold-only">Total Duration: </span>
                             <span>48h</span>
                             <div>Wednesdays, from 08.00pm - 10:00pm</div>                            
                         </div>

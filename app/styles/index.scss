@@ -1,13 +1,18 @@
 @import 'normalize.css';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import "partials/vars";
+@import "partials/mixins";
 body {
   font-size: 14px;
   font-weight: lighter;
 }
 
-.bold {
+.bold-only {
   font-weight: bold;
+}
+
+.bold {
+  @extend .bold-only;
   letter-spacing: 5px;
 }
 
@@ -20,7 +25,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
   }
-  .btm-border{
+  .btm-border {
     border-bottom: 3px solid $orange-color;
     width: 3.5em;
     margin: 2em auto;

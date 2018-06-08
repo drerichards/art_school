@@ -91,7 +91,7 @@ var Illustration = function Illustration() {
             fileName: _jsxFileName,
             lineNumber: 24
         }
-    }, _react2.default.createElement('span', { className: 'bold', __source: {
+    }, _react2.default.createElement('span', { className: 'bold-only', __source: {
             fileName: _jsxFileName,
             lineNumber: 25
         }
@@ -105,7 +105,7 @@ var Illustration = function Illustration() {
             fileName: _jsxFileName,
             lineNumber: 28
         }
-    }, _react2.default.createElement('span', { className: 'bold', __source: {
+    }, _react2.default.createElement('span', { className: 'bold-only', __source: {
             fileName: _jsxFileName,
             lineNumber: 29
         }

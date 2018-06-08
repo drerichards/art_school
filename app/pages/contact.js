@@ -1,6 +1,7 @@
 import { Button, Jumbotron, FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
 import Theme from '../components/Theme';
 import indexStyle from '../styles/index.scss';
+import contactStyle from '../styles/scss/contact.scss';
 
 const FieldGroup = ({ id, help, ...props }) => (
     <FormGroup controlId={id}>
@@ -12,31 +13,28 @@ const FieldGroup = ({ id, help, ...props }) => (
 
 const Contact = () => (
     <Theme>
-        <style dangerouslySetInnerHTML={{ __html: indexStyle }} />    
+        <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
+        <style dangerouslySetInnerHTML={{ __html: contactStyle }} />
         {/* Map */}
-        <Jumbotron>
-            <p>
-                <Button bsStyle="primary">Learn more</Button>
-            </p>
-        </Jumbotron>
-
+        <Jumbotron className="contact-jumbo" />
         {/* Contact form section */}
-        <div className="container">
+        <div className="container contact-container">
             <h3>GET IN TOUCH</h3>
+            <p className="btm-border" />
             <section>
-                <h4 className="bold">To enroll or for any general information, please contact us:</h4>
+                <h5 className="bold-only">To enroll or for any general information, please contact us:</h5>
                 <br />
                 <span>
-                    <h4 className="bold">Telephone: </h4>
-                    <h4>123-456-7890 </h4>
+                    <h5 className="bold-only">Telephone: </h5>
+                    <p>123-456-7890 </p>
                 </span>
                 <span>
-                    <h4 className="bold">• Email: </h4>
-                    <h4>info@mysite.com</h4>
+                    <h5 className="bold-only"> • Email: </h5>
+                    <p>info@mysite.com</p>
                 </span>
                 <div>
-                    <h4 className="bold">Address: </h4>
-                    <h4>500 Terry Francois St, San Francisco, CA 94158</h4>
+                    <h5 className="bold-only">Address: </h5>
+                    <p>500 Terry Francois St, San Francisco, CA 94158</p>
                 </div>
             </section>
 
@@ -60,7 +58,7 @@ const Contact = () => (
                 <FormGroup controlId="formControlsTextarea">
                     <FormControl componentClass="textarea" placeholder="Message" />
                 </FormGroup>
-                <Button type="submit">Submit</Button>
+                <Button type="submit">Send >></Button>
             </form>
         </div>
     </Theme>

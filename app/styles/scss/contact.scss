@@ -1,0 +1,30 @@
+@import "../partials/mixins";
+@import "../partials/vars";
+.contact-jumbo {
+    @include jumbotron-settings(60vh, $img-prefix+"v1528422446/artschool/cover-map.png");
+}
+
+.contact-container {
+    padding: 0 14em;
+    margin-bottom: 5em;
+    section {
+        margin: 3em;
+        h5,
+        p {
+            display: inline-block;
+            margin: auto .5%;
+        }
+        p {
+            font-weight: 400;
+        }
+    }
+    form {
+        input, button{
+            border-radius: 0;
+        }
+        button {
+            background-color: $orange-color;
+            color: #fff;
+        }
+    }
+}

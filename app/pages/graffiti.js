@@ -22,11 +22,11 @@ const Graffiti = () => (
                     </div>
                     <div className="course-dates">
                         <div>
-                            <span className="bold">Dates: </span>
+                            <span className="bold-only">Dates: </span>
                             <span>09/04 - 05/05</span>
                         </div>
                         <div>
-                            <span className="bold">Total Duration: </span>
+                            <span className="bold-only">Total Duration: </span>
                             <span>48h</span>
                             <div>Sundays, 08:00am - 12:00pm</div>
                         </div>
