@@ -1,7 +1,0 @@
-;
-
-(function () {
-  "use strict";
-
-  module.exports = ".contact-jumbo {\n  background-size: cover;\n  background-image: url(\"https://res.cloudinary.com/andrerichards/image/upload/v1528422446/artschool/cover-map.png\");\n  background-position: center;\n  background-repeat: no-repeat;\n  height: 60vh;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background-attachment: fixed; }\n\n.contact-container {\n  padding: 0 14em;\n  margin-bottom: 5em; }\n\n.contact-container section {\n    margin: 3em; }\n\n.contact-container section h5,\n    .contact-container section p {\n      display: inline-block;\n      margin: auto .5%; }\n\n.contact-container section p {\n      font-weight: 400; }\n\n.contact-container form input, .contact-container form button {\n    border-radius: 0; }\n\n.contact-container form button {\n    background-color: #f07639;\n    color: #fff; }\n";
-})();

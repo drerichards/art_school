@@ -3,8 +3,13 @@
 @import "partials/vars";
 @import "partials/mixins";
 body {
-  font-size: 14px;
   font-weight: lighter;
+  @include tiny-screens() {
+    font-size: 30px;
+  }
+  @include large-screens() {
+    font-size: 14px;
+  }
 }
 
 .bold-only {

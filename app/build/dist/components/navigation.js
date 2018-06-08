@@ -110,7 +110,7 @@ var Navigation = function Navigation() {
             fileName: _jsxFileName,
             lineNumber: 34
         }
-    }, _react2.default.createElement(_reactBootstrap.NavDropdown, { eventKey: 3, title: 'Courses', id: 'basic-nav-dropdown', __source: {
+    }, _react2.default.createElement(_reactBootstrap.NavDropdown, { eventKey: 3, title: 'Courses', id: 'dropdown-no-caret', __source: {
             fileName: _jsxFileName,
             lineNumber: 35
         }

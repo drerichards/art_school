@@ -5,18 +5,22 @@
     justify-content: center;
 }
 
-@mixin jumbotron-settings($height, $image){
+@mixin jumbotron-settings($height, $image) {
     background-size: cover;
-    background-image: url($image);    
+    background-image: url($image);
     background-position: center;
     background-repeat: no-repeat;
     height: $height;
     display: flex;
     align-items: center;
     background-attachment: fixed;
+    @include tiny-screens() {
+        background-attachment: initial;
+        height: ($height * .75);
+    }
 }
 
-@mixin course-container-settings{
+@mixin course-container-settings {
     margin-bottom: 4em;
     h1 {
         font-size: 5.5em;
@@ -26,7 +30,7 @@
     h5 {
         margin-bottom: 2em;
     }
-    p{
+    p {
         font-weight: 400;
     }
     a {
@@ -35,31 +39,31 @@
     }
 }
 
-@mixin tiny-screens(){
-    @media only screen and (max-width: 320px) {
+@mixin tiny-screens() {
+    @media only screen and (min-width: 320px) and (orientation: portrait) {
         @content;
     }
 }
 
-@mixin small-screens(){
-    @media only screen and (max-width: 480px) {
+@mixin small-screens() {
+    @media only screen and (min-width: 480px) {
         @content;
     }
 }
 
-@mixin medium-screens(){
-    @media only screen and (max-width: 680px) {
+@mixin medium-screens() {
+    @media only screen and (min-width: 680px) {
         @content;
     }
 }
 
-@mixin large-screens(){
-    @media only screen and (max-width: 960px) {
+@mixin large-screens() {
+    @media only screen and (min-width: 960px) {
         @content;
     }
 }
 
-@mixin ie-6{
+@mixin ie-6 {
     * html {
         @content;
     }

@@ -32,7 +32,7 @@ const Navigation = () => (
                     </NavItem>
                     <NavItem eventKey={3} href="#">
                         <span>
-                            <NavDropdown eventKey={3} title="Courses" id="basic-nav-dropdown">
+                            <NavDropdown eventKey={3} title="Courses" id="dropdown-no-caret">
                                 <MenuItem eventKey={3.1}>
                                     <Link href="/fine-art">
                                         <p>Fine Art</p>
