@@ -1,14 +1,14 @@
 @import "partials/mixins";
 @import "partials/vars";
 .home-jumbo {
-    @include jumbotron-settings(90vh, "https://res.cloudinary.com/andrerichards/image/upload/v1528371884/artschool/cover-2.jpg");
+    @include jumbotron-settings(90vh, $img-prefix+"v1528371884/artschool/cover-2.jpg");
     main {
         @include center-flex;
         flex-direction: column;
         align-items: flex-start;
         margin: 0 auto;
         width: 25vw;
-        height: 50vh;
+        height: 55vh;
         min-width: 200px;
         background-color: #fff;
         text-align: left;
@@ -20,7 +20,7 @@
         }
         button {
             border: none;
-            margin: 0 auto;
+            margin: 0 auto 1em;
         }
         button:hover,
         button:focus,
@@ -34,30 +34,14 @@
 
 .home-course-container {
     .home-course-columns {
-        h1 {
-            font-size: 5em;
-            font-weight: 800;
-            margin-bottom: 0;
-        }
-        h5 {
-            margin-bottom: 2em;
-        }
-        p{
-            font-weight: 400;
-        }
-        a {
-            color: $orange-color;
-            font-weight: 400;
-        }
+        @include course-container-settings;
     }
 }
 
 .home-image-container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
     .container {
         margin: 0;
         width: 100%;
@@ -68,7 +52,6 @@
                 display: flex;
                 flex-direction: column;
                 margin: 0.25em;
-                
                 div {
                     background-size: cover;
                     width: 100%;
@@ -76,6 +59,36 @@
                     margin: 0.25em;
                 }
             }
+        }
+    }
+}
+
+.next-course-container {
+    .next-course-columns {
+        @include course-container-settings;
+    }
+}
+
+.home-btm-jumbo {
+    @include jumbotron-settings(70vh, $img-prefix+"b_rgb:000000,co_rgb:000000,dn_50,e_art:quartz,o_45,pg_1/e_brightness:-25/v1528402326/artschool/cover-3.jpg");
+    margin-bottom: 0;
+    .container {
+        h1 {
+            color: #fff;
+            margin: 0;
+            font-weight: bold;
+        }
+        h4 {
+            font-size: 2em;
+            color: #fff;
+            font-weight: 400;
+        }
+        button {
+            background-color: #2F2E2E;
+            color: #fff;
+            border: none;
+            border-radius: 0;
+            padding: 0.5em 3.5em;
         }
     }
 }

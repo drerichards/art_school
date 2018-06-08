@@ -5,11 +5,18 @@ import homeStyle from '../styles/scss/home.scss';
 
 const dummyText = "I'm a paragraph. Click here to add your own text and edit me.";
 const dummyLink = 'Read More >>';
-const dummyWords = [
+const dummyWords1 = [
     ['F', 'Fine Art'],
     ['G', 'Graphic Design'],
     ['G', 'Graffiti'],
     ['I', 'Illustration']
+];
+
+const dummyWords2 = [
+    ['14', 'March'],
+    ['26', 'March'],
+    ['09', 'April'],
+    ['15', 'April']
 ];
 
 const filenames = [
@@ -48,6 +55,11 @@ const columnGenerator = () => {
     return columns;
 };
 
+const scrollToDiv = () => {
+    const homeCourse = document.getElementById('home-course');
+    homeCourse.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 const Index = () => (
     <Theme>
         <style dangerouslySetInnerHTML={{ __html: indexStyle }} />
@@ -58,19 +70,19 @@ const Index = () => (
                 <h1>CRE</h1>
                 <h1>ATIV</h1>
                 <h1>ITY.</h1>
-                <Button className="chevron" bsSize="large">
+                <Button className="chevron" bsSize="large" onClick={() => scrollToDiv()} >
                     <Glyphicon glyph="chevron-down" />
                 </Button>
             </main>
         </Jumbotron>
 
         {/* Courses section */}
-        <div className="container home-course-container">
+        <div id="home-course" className="container home-course-container">
             <h3>OUR COURSES</h3>
             <p className="btm-border" />
             <Grid>
                 <Row className="show-grid">
-                    { dummyWords.map(word => { 
+                    { dummyWords1.map(word => { 
                         return (
                             <Col className="home-course-columns" sm={6} md={3}>
                                 <br />
@@ -96,36 +108,36 @@ const Index = () => (
         </div>
 
         {/* Next Courses */}
-        <div className="container">
+        <div className="container next-course-container">
             <h3>NEXT COURSES</h3>
+            <p className="btm-border" />
             <Grid>
                 <Row className="show-grid">
-                    <Col sm={6} md={3}>
-                        <br />
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                    </Col>
-                    <Col sm={6} md={3}>
-                        <br />
-                    </Col>
+                    { dummyWords2.map(word => { 
+                        return (
+                            <Col className="next-course-columns" sm={6} md={3}>
+                                <br />
+                                <h1>{word[0]}</h1>
+                                <h5>{word[1]}</h5>
+                                <p>{dummyText}</p>
+                                <br />
+                                <a href="#">{dummyLink}</a>
+                            </Col>
+                        );
+                    })}
                 </Row>
             </Grid>
         </div>
 
         {/* Bottom Jumbotron */}
-        <Jumbotron>
-            <h1>Hello, world!</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            <p>
-                <Button bsStyle="primary">Learn more</Button>
-            </p>
+        <Jumbotron className="home-btm-jumbo">
+            <div className="container">
+                <h1>IDENTITY</h1>
+                <h4>CONQUER YOUR OWN STYLE</h4>
+                <p>
+                    <Button>Read More >></Button>
+                </p>
+            </div>
         </Jumbotron>
     </Theme>
 );
